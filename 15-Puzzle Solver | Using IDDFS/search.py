@@ -1,6 +1,4 @@
-# Student: Maria Cunha
-# NetID: 676493398
-# Homework 4, 15 Puzzle using IDDFS
+
 
 import psutil
 from time import time
