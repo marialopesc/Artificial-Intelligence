@@ -1,0 +1,31 @@
+15-Puzzle Solver | Python | Using IDDFS
+
+This program solves the 15-puzzle (also known as the Sliding Tiles Puzzle) using the Iterative
+Deepening Depth-First Search (IDDFS) algorithm. The goal is to reach the following state:
+
+1  2  3  4
+5  6  7  8
+9 10 11 12
+13 14 15 0
+
+The default initial board state is provided in the program. Modify input_sequence in the main
+function to try other board configurations.
+
+Input:
+    The board configuration should be given as a string, with numbers from 1 to 15 representing tiles,
+    and 0 indicating the empty space. For instance:
+
+input: "1 0 2 4 5 7 3 8 9 6 11 12 13 10 14 15"
+
+output:
+    - The sequence of moves needed to solve the puzzle.
+    - The number of nodes expanded during the search.
+    - The total time taken.
+    - The memory used.
+
+Requirements: Python 3.x, psutil library for memory tracking.
+
+Install using pip: pip install psutil
+
+Algorithm chosen: The program employs the Iterative Deepening Depth-First Search algorithm to find
+    the solution. It avoids cycles by checking for repeated states in the path to any given node.
